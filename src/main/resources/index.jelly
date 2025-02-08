@@ -1,0 +1,4 @@
+<?jelly escape-by-default='true'?>
+<div>
+    <p>EC2 Manager Plugin - Manage EC2 instances from Jenkins.</p>
+</div>

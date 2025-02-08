@@ -1,0 +1,24 @@
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:j="jelly:core" xmlns:f="/lib/form">
+
+    <f:entry title="Instance ID" field="instanceId">
+        <f:textbox />
+    </f:entry>
+
+    <f:entry title="Idle Timeout (Minutes)" field="idleTimeoutMinutes">
+        <f:number min="1" value="30"/>
+    </f:entry>
+
+    <f:entry title="Auto Start on Business Days (8:30 AM ET)" field="autoStart">
+        <f:checkbox />
+    </f:entry>
+
+    <f:entry title="Check Interval (Minutes)" field="checkPeriodMinutes">
+        <f:number min="0" value="5"/>
+        <div>
+            <i>How often should the system check for idle EC2 instances?</i><br/>
+            <b>Set to 0 to disable automatic idle checks and reduce API calls.</b>
+        </div>
+    </f:entry>
+
+</j:jelly>
